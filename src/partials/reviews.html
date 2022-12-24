@@ -1,0 +1,50 @@
+<section class="reviews">
+    <div class="container">
+        <h2 class="visually-hidden">Reviews</h2>
+        <div class="slider-img">
+            <ul class="slider-img__items list">
+                <li class="slider-img__item">
+                    <img 
+                        srcset="
+                            ./images/reviews/mob.jpg      280w,
+                            ./images/reviews/tablet.jpg      704w,
+                            ./images/reviews/desk.jpg    1013w,
+                            ./images/reviews/mob@2x.jpg   560w,
+                            ./images/reviews/tablet@2x.jpg  1408w,
+                            ./images/reviews/desk@2x.jpg 2026w
+                        "
+                        sizes="
+                            (min-widht: 1200px) 1013px,
+                            (min-widht: 768px) 704px, 
+                            (min-widht: 480px) 280px, 100vw
+                        "
+                        src="./images/reviews/mob.jpg"
+                        alt="Ice berries"
+                        class="slider__img"
+                    >
+                </li>
+            </ul>
+        </div>
+        <div class="slider-ppl">
+            <div class="slider-ppl__wrap">
+                <ul class="slider-ppl__items list">
+                    <li class="slider-ppl__item">
+                        <div class="reviewer">
+                            <img src="/src/images/reviews/emily-1.jpg" alt="Emily" class="reviewer__img">
+                            <div class="reviewer_wrap">
+                                <p class="reviewer__comment">I love visiting your cafe. You prepare the most delicious ice
+                                cream in Los Angeles! In addition, you have beautiful serving,
+                                cozy atmosphere and polite staff.</p>
+                            </div>
+                            <p class="reviewer__info">Emily, Los Angeles</p>
+                            <svg class="dots" width="72" height="12">
+                                <use href="/src/images/icon-sprite.svg#icon-dots"></use>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</section>
+
