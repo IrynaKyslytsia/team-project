@@ -32,6 +32,7 @@
   width: 40px;
   height: 37px;
   background-image: url('../images/header/logo-mob.png');
+  background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -47,8 +48,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/header/logo-tab@2x.png');
-       width: 48px;
-       height: 44px;
+       
     }
   }
 
@@ -61,8 +61,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/header/logo-desktop@2x.png');
-      width: 60px;
-      height: 65px;
+      
     }
   }
 
