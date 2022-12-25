@@ -82,10 +82,12 @@
 
   &:hover {
     color: #0a8817;
+    text-decoration-line: underline;
   }
 
   &:focus {
     color: #fff;
+    text-decoration-line: underline;
   }
 
   &--disabled {
