@@ -12,16 +12,16 @@
   // color: $btn;
   transition: color 250ms linear, border-color 250ms linear;
   &:hover {
-    border-color: #0a8817;
+    border-color: $btn-accent;
   }
 
   &:focus {
-    border-color: #0a8817;
-    color: #fff; 
+    border-color: $btn-accent;
+    color: $second; 
   }
 
   &--disabled {
-    border-color: #ababab;
+    border-color: $third;
   }
 
   @media screen and (min-width: 1200px) {
@@ -49,15 +49,15 @@
   transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
   &:hover {  
-    background-color: #0a8817;
-    border-color: #0a8817;
+    background-color: $btn-accent;
+    border-color: $btn-accent;
   }
 
   &:focus { 
-    background-color: #0a8817;
-    border-color: #0a8817;
-    color: #fff;
-    fill: #fff;
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+    color: $second;
+    fill: $second;
   }
 
   &--disabled {
@@ -82,12 +82,12 @@
   // border: none;
   transition: color 250ms linear, text-decoration-line 250ms linear;
   &:hover {
-    color: #0a8817;
+    color: $btn-accent;
     text-decoration-line: underline;
   }
 
   &:focus {  
-    color: #fff;
+    color: $second;
     text-decoration-line: underline;
   }
 
@@ -121,15 +121,15 @@
   transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
   &:hover {
-    background-color: #0a8817;
-    border-color: #0a8817;
+    background-color: $btn-accent;
+    border-color: $btn-accent;
   }
 
   &:focus {
-    background-color: #0a8817;
-    border-color: #0a8817;
-    color: #fff;
-    fill: #fff;
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+    color: $second;
+    fill: $second;
   }
 
   &--disabled {
@@ -153,13 +153,13 @@
   color: $btn;
   transition: color 250ms linear, border-color 250ms linear, fill 250ms linear;
   &:hover { 
-    border-color: #0a8817;
+    border-color: $btn-accent;
   }
 
   &:focus { 
-    border-color: #0a8817;
-    color: #fff;
-    fill: #fff;
+    border-color: $btn-accent;
+    color: $second;
+    fill: $second;
   }
 
   &--disabled {
@@ -184,15 +184,15 @@
   transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
   &:hover {  
-    background-color: #0a8817;
-    border-color: #0a8817;
+    background-color: $btn-accent;
+    border-color: $btn-accent;
   }
 
   &:focus { 
-    background-color: #0a8817;
-    border-color: #0a8817;
-    color: #fff;
-    fill: #fff;
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+    color: $second;
+    fill: $second;
   }
 
   &--disabled {
