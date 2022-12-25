@@ -79,7 +79,7 @@
   color: $accent;
   // background-color: initial;
   // border: none;
-
+ transition: color 950ms linear, text-decoration-line 950ms linear;
   &:hover {
     color: #0a8817;
     text-decoration-line: underline;
@@ -117,7 +117,7 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-
+  transition: color 950ms linear, background-color 950ms linear, border-color 950ms linear, fill 950ms linear;
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
@@ -149,7 +149,7 @@
   border-radius: 10px;
   border: 2px solid $accent;
   color: $btn;
-
+  transition: color 950ms linear, border-color 950ms linear, fill 950ms linear;
   &:hover {
     border-color: #0a8817;
   }
