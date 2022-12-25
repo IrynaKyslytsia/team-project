@@ -15,49 +15,14 @@
   padding: 0;
   margin: 0;
 }
-// // бэкдроп
-// .backdrop {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   background-color: rgba(0, 0, 0, 0.2);
-//   opacity: 1;
-//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   /*visibility: visible;*/
-//   z-index: 50;
-//   &__is-hidden {
-//     opacity: 0;
-//     pointer-events: none;
-//     // visibility: hidden;
-//     @media screen and(min-width:768px) {
-//       position: fixed;
-//     }
-//   }
-// }
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-//   visibility: hidden;
-// }
-// .backdrop.is-hidden .product-modal {
-//   transform: translate(-50%, -50%) scale(1.3);
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// основа
+// модальное окно
 .product-modal {
+  padding: 0;
   box-sizing: border-box;
   position: absolute;
 
-  padding: 24px;
-
   @media screen and (min-width: 280px) {
-    // top: 50%;
-    left: 50%;
+    top: 0;
 
     padding: 26px;
 
@@ -71,10 +36,11 @@
     top: 50%;
     left: 50%;
 
-    padding: 30px;
-
+    max-width: 568px;
     width: 568px;
     height: 644px;
+    padding: 30px 52px;
+
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -108,7 +74,6 @@
     }
   }
   &__title {
-    // эти 4 строчки нужно унифицировать и убрать
     font-family: 'Seymour One';
     font-style: normal;
     margin: 0;
@@ -121,7 +86,6 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    // цвет унифицировать и поменять на var или $
     color: $main;
 
     @media screen and (max-width: 767px) {
@@ -148,7 +112,7 @@
     &__item {
       position: relative;
       width: 132px;
-      height: 136px;
+      height: 135px;
 
       &:not(:last-child) {
         @media screen and (max-width: 767px) {
@@ -176,9 +140,6 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      //   width: 1px;
-      //   height: 1px;
-      // margin: 0;
       margin: -1px;
       border: 0;
       padding: 0;
@@ -207,8 +168,6 @@
     &__text {
       margin: 0;
       padding: 0;
-      // font-family: 'Montserrat';
-      // font-style: normal;
       font-weight: $secondary-text-weight;
       font-size: 16px;
       line-height: 1.25;
@@ -311,15 +270,12 @@
     }
   }
   &__btn {
+    width: auto;
     box-sizing: border-box;
     margin-top: -5px;
     margin-left: auto;
     margin-right: auto;
     padding: 12px 34px;
-
-    // эти 2 строчки нужно унифицировать и убрать
-    // font-family: 'Montserrat';
-    // font-style: normal;
 
     font-weight: $button-text-weight;
     font-size: 14px;
@@ -329,7 +285,6 @@
     text-align: center;
 
     border-radius: 10px;
-    // цвет унифицировать и поменять на var или $
     color: $main;
     background-color: $accent;
   }
