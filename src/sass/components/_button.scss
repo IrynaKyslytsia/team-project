@@ -10,7 +10,7 @@
   border-radius: 10px;
   // background-color: initial;
   // color: $btn;
-
+  transition: color 250ms linear, border-color 250ms linear;
   &:hover {
     border-color: #0a8817;
   }
@@ -46,7 +46,8 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, fill 250ms linear;
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
@@ -79,7 +80,7 @@
   color: $accent;
   // background-color: initial;
   // border: none;
- transition: color 950ms linear, text-decoration-line 950ms linear;
+  transition: color 250ms linear, text-decoration-line 250ms linear;
   &:hover {
     color: #0a8817;
     text-decoration-line: underline;
@@ -117,7 +118,8 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-  transition: color 950ms linear, background-color 950ms linear, border-color 950ms linear, fill 950ms linear;
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, fill 250ms linear;
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
@@ -149,7 +151,7 @@
   border-radius: 10px;
   border: 2px solid $accent;
   color: $btn;
-  transition: color 950ms linear, border-color 950ms linear, fill 950ms linear;
+  transition: color 250ms linear, border-color 250ms linear, fill 250ms linear;
   &:hover {
     border-color: #0a8817;
   }
@@ -179,7 +181,8 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: #000000;
-  transition: color 950ms linear, background-color 950ms linear, border-color 950ms linear, fill 950ms linear;
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, fill 250ms linear;
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
@@ -197,5 +200,3 @@
     background-color: $third;
   }
 }
-
-
