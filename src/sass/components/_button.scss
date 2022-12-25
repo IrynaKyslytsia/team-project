@@ -41,8 +41,9 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-  transition: color 250ms linear, background-color 250ms linear,
-    border-color 250ms linear, fill 250ms linear;
+  transition: hover 950ms linear, focus 950ms linear;
+  // transition: color 250ms linear, background-color 250ms linear,
+  //   border-color 250ms linear, fill 250ms linear;
   &:hover {  
     background-color: $btn-accent;
     border-color: $btn-accent;
@@ -110,7 +111,7 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-  transition: hover 250ms linear, focus 250ms linear;
+  transition: hover 950ms linear, focus 950ms linear;
    
   &:hover {
     background-color: $btn-accent;
