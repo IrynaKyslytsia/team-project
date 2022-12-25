@@ -17,14 +17,14 @@
     top: -7px;
     width: 131px;
     height: 131px;
-    background-image: url(../images/products/modal-mob-icecr-1x-min.png);
+    // background-image: url(../images/products/modal-mob-icecr-1x-min.png);
     border-radius: 50%;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-      background-image: url(../images/products/modal-mob-icecr@2x-min.png);
+      // background-image: url(../images/products/modal-mob-icecr@2x-min.png);
       background-size: contain;
     }
   }
@@ -49,7 +49,7 @@
     top: -7px;
     width: 131px;
     height: 131px;
-    background-image: url(../images/products/mob-ice-coffe-1x-min.png);
+    // background-image: url(../images/products/mob-ice-coffe-1x-min.png);
     background-size: cover;
     border-radius: 50%;
     box-shadow: 0px 5.26027px 19.726px $ice-coffee-color;
@@ -57,7 +57,7 @@
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-      background-image: url(../images/products/mob-ice-coffe-@2x-min.png);
+      // background-image: url(../images/products/mob-ice-coffe-@2x-min.png);
       background-size: contain;
     }
   }
@@ -82,7 +82,7 @@
     top: -7px;
     width: 131px;
     height: 131px;
-    background-image: url(../images/products/mob-milkshake-1x-min.png);
+    // background-image: url(../images/products/mob-milkshake-1x-min.png);
     background-size: cover;
     border-radius: 50%;
     box-shadow: 0px 5.26027px 19.726px $milkshakes-color;
@@ -90,7 +90,7 @@
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-      background-image: url(../images/products/mob-milkshake@2x-min.png);
+      // background-image: url(../images/products/mob-milkshake@2x-min.png);
     }
   }
 }
