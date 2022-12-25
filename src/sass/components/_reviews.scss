@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 .reviews {
-    margin-top: 80px;
+    background-position: -60px -260px;
     background-image: url("/src/images/reviews/backgroud_mobile.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -37,7 +37,10 @@
             background-image: url("/src/images/reviews/backgroud_desktop@2x.jpg");
         }
     }
-    margin-bottom: 40px;
+}
+.container {
+    position: relative;
+    top: -80px;
 }
 
 .slider-img__items {
@@ -51,12 +54,13 @@
 .slider__img {
     min-width: 280px;
     border-radius: 24px;
+    @media screen and (min-width: 768px) {
+        width: 704px;
+    }
     @media screen and (min-width: 1200px){
         width: 1013px;
     }
-    @media screen and (min-width: 768px){
-        width: 704px;
-    }
+
 }
 .reviewer {
     display: flex;
