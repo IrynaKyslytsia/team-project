@@ -31,28 +31,34 @@
 .header__logo {
   width: 40px;
   height: 37px;
-  background-image: url("../images/header/logo-mob.png");
+  background-image: url('../images/header/logo-mob.png');
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url("../images/header/logo-mob@2x.png");
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/header/logo-mob@2x.png');
   }
 
   @media screen and (min-width: 768px) {
     width: 48px;
     height: 44px;
-    background-image: url("../images/header/logo-tab.png");
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url("../images/header/logo-tab@2x.png");
+    background-image: url('../images/header/logo-tab.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/logo-tab@2x.png');
     }
   }
 
   @media screen and (min-width: 1200px) {
     width: 60px;
     height: 65px;
-    background-image: url("../images/header/logo-desktop.png");
+    background-image: url('../images/header/logo-desktop.png');
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url("../images/header/logo-desktop@2x.png");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/header/logo-desktop@2x.png');
     }
   }
 
@@ -79,6 +85,10 @@
   }
 }
 
+.nav__item:active {
+  transform: scale(0.9);
+}
+
 .nav__item:not(:last-child) {
   margin-right: 28px;
 }
@@ -92,9 +102,6 @@
   transition: color 250ms linear;
   &:hover {
     color: #f8d24e;
-  }
-  &:active {
-    transform: scale(0.9); 
   }
 }
 
@@ -127,8 +134,3 @@
     margin-left: auto;
   }
 }
-
-
-
-
-
