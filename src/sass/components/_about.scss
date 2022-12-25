@@ -13,7 +13,8 @@
     }
   }
 
-  &__title {
+  &__pre-title {
+    display: block;
     font-size: 18px;
     line-height: calc(22 / 18);
     text-align: center;
@@ -29,7 +30,7 @@
     }
   }
 
-  &__how {
+  &__title {
     font-family: 'Seymour One';
     font-size: 30px;
     line-height: calc(38 / 30);
