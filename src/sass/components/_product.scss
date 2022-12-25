@@ -1,4 +1,29 @@
 .product {
+  background-image: url(../images/product/bg/Bg-mobile.jpg);
+  background-size: cover;
+  // background-repeat: no-repeat;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/product/bg/Bg-mobile-2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/product/bg/Bg-tablet.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/product/bg/Bg-tablet-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/product/bg/Bg-desktop.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/product/bg/Bg-desktop-2x.jpg);
+    }
+  }
+
   &__container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -28,29 +53,29 @@
       padding-left: 16px;
     }
     // outline: 1px solid red;
-    background-image: url(../images/product/bg/Bg-mobile.jpg);
-    background-size: cover;
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/product/bg/Bg-mobile-2x.jpg);
-    }
-    @media screen and (min-width: 768px) {
-      background-image: url(../images/product/bg/Bg-tablet.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/product/bg/Bg-tablet-2x.jpg);
-      }
-    }
-    @media screen and (min-width: 1200px) {
-      background-image: url(../images/product/bg/Bg-desktop.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: url(../images/product/bg/Bg-desktop-2x.jpg);
-      }
-    }
+    // background-image: url(../images/product/bg/Bg-mobile.jpg);
+    // background-size: cover;
+    // @media screen and (min-device-pixel-ratio: 2),
+    //   screen and (min-resolution: 192dpi),
+    //   screen and (min-resolution: 2dppx) {
+    //   background-image: url(../images/product/bg/Bg-mobile-2x.jpg);
+    // }
+    // @media screen and (min-width: 768px) {
+    //   background-image: url(../images/product/bg/Bg-tablet.jpg);
+    //   @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //     background-image: url(../images/product/bg/Bg-tablet-2x.jpg);
+    //   }
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   background-image: url(../images/product/bg/Bg-desktop.jpg);
+    //   @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //     background-image: url(../images/product/bg/Bg-desktop-2x.jpg);
+    //   }
+    // }
   }
   &__label {
     margin-bottom: 12px;
@@ -294,8 +319,3 @@
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   }
 }
-
-
-
-
-
