@@ -14,7 +14,6 @@
 }
 
 .menu-toggle {
-    display: none;
     min-height: 40px;
     min-width: 40px;
     display: flex;
@@ -55,6 +54,15 @@
 .menu-container.is-open {
     transform: translateX(0);
 }
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #000;
+}
+
+
 .mobile-menu .link {
     display: flex;
    justify-content: center;
