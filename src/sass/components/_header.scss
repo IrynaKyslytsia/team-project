@@ -108,9 +108,9 @@
 }
 
 .header .menu-toggle {
+  display: flex;
   min-height: 40px;
   min-width: 40px;
-  display: flex;
   align-items: center;
   background-color: transparent;
   cursor: pointer;
