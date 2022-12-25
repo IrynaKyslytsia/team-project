@@ -13,7 +13,8 @@
     }
   }
 
-  &__title {
+  &__pre-title {
+    display: block;
     font-size: 18px;
     line-height: calc(22 / 18);
     text-align: center;
@@ -29,7 +30,7 @@
     }
   }
 
-  &__how {
+  &__title {
     font-family: 'Seymour One';
     font-size: 30px;
     line-height: calc(38 / 30);
@@ -67,19 +68,29 @@
   justify-content: center;
   width: 280px;
   height: 280px;
-  background-color: rgba($accent, 0.7);
 
-  border-radius: 50%;
   margin-bottom: 60px;
+  background: linear-gradient(0deg, rgba($accent, 0.7), rgba($accent, 0.7)),
+    $dots;
+  box-shadow: 0px 4.48583px 16.8218px rgba($shadow, 0.25);
+  border-radius: 140px;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 768px) {
+    background: linear-gradient(0deg, rgba($accent, 0.7), rgba($accent, 0.7)),
+      $dots;
+    box-shadow: 0px 5.30813px 19.9055px rgba($shadow, 0.25);
+    border-radius: 165px;
     width: 330px;
     height: 330px;
     margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
+    background: linear-gradient(0deg, rgba($accent, 0.7), rgba($accent, 0.7)),
+      $dots;
+    box-shadow: 0px 8px 30px rgba($shadow, 0.25);
+    border-radius: 250px;
     width: 491px;
     height: 491px;
     margin-bottom: 0;
@@ -148,30 +159,4 @@
   margin-bottom: 32px;
 }
 
-.about__btn {
-  display: inline-block;
-  text-decoration: none;
-  border: none;
-  padding: 12px 34px;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  border-radius: 10px;
-  &:link {
-    color: $btn;
-    background-color: $accent;
-  }
-  &:hover {
-    color: $btn;
-    background-color: $btn-accent;
-  }
-  &:active {
-    color: $second;
-    background-color: $btn-accent;
-  }
-  &:visited {
-    color: $btn;
-    background-color: $third;
-  }
-}
+//
