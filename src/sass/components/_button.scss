@@ -13,7 +13,7 @@
 
   &:focus {
     border-color: $btn-accent;
-    color: $second; 
+    color: $second;
   }
 
   &--disabled {
@@ -41,15 +41,14 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-  transition: hover 950ms linear, focus 950ms linear;
-  // transition: color 250ms linear, background-color 250ms linear,
-  //   border-color 250ms linear, fill 250ms linear;
-  &:hover {  
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, fill 250ms linear;
+  &:hover {
     background-color: $btn-accent;
     border-color: $btn-accent;
   }
 
-  &:focus { 
+  &:focus {
     background-color: $btn-accent;
     border-color: $btn-accent;
     color: $second;
@@ -73,13 +72,13 @@
   text-decoration-line: underline;
   color: $accent;
   transition: color 250ms linear, text-decoration-line 250ms linear;
-  
+
   &:hover {
     color: $btn-accent;
     text-decoration-line: underline;
   }
 
-  &:focus {  
+  &:focus {
     color: $second;
     text-decoration-line: underline;
   }
@@ -111,8 +110,9 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-  transition: hover 950ms linear, focus 950ms linear;
-   
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, fill 250ms linear;
+
   &:hover {
     background-color: $btn-accent;
     border-color: $btn-accent;
@@ -145,11 +145,11 @@
   border: 2px solid $accent;
   color: $btn;
   transition: color 250ms linear, border-color 250ms linear, fill 250ms linear;
-  &:hover { 
+  &:hover {
     border-color: $btn-accent;
   }
 
-  &:focus { 
+  &:focus {
     border-color: $btn-accent;
     color: $second;
     fill: $second;
@@ -176,12 +176,12 @@
   color: #000000;
   transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
-  &:hover {  
+  &:hover {
     background-color: $btn-accent;
     border-color: $btn-accent;
   }
 
-  &:focus { 
+  &:focus {
     background-color: $btn-accent;
     border-color: $btn-accent;
     color: $second;
