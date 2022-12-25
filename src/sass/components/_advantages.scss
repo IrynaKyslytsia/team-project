@@ -1,0 +1,89 @@
+.advantages {
+  background-color: $background;
+  color: $second;
+  &__hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  & .container {
+    padding-bottom: 64px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 192px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
+    padding-bottom: 178px;
+  }
+}
+.adv {
+  padding: 0 25px;
+  &__grid {
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 80px;
+      padding: 0 44px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card:not(:last-child) {
+    margin-bottom: 28px;
+  }
+
+  &__svg {
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__value {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: calc(59 / 48);
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: calc(71 / 58);
+    }
+  }
+  &__text {
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: calc(28 / 16);
+    }
+  }
+}
