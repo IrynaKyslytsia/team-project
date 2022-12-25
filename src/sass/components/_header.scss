@@ -47,6 +47,8 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/header/logo-tab@2x.png');
+       width: 48px;
+       height: 44px;
     }
   }
 
@@ -59,6 +61,8 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url('../images/header/logo-desktop@2x.png');
+      width: 60px;
+      height: 65px;
     }
   }
 
