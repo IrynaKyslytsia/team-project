@@ -13,11 +13,13 @@
   transition: color 250ms linear, border-color 250ms linear;
   &:hover {
     border-color: #0a8817;
+    transform: scale(1.02);  
   }
 
   &:focus {
     border-color: #0a8817;
     color: #fff;
+    transform: scale(1.02);  
   }
 
   &--disabled {
@@ -49,11 +51,13 @@
   transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
   &:hover {
+    transform: scale(1.02);  
     background-color: #0a8817;
     border-color: #0a8817;
   }
 
   &:focus {
+    transform: scale(1.02);  
     background-color: #0a8817;
     border-color: #0a8817;
     color: #fff;
@@ -82,11 +86,13 @@
   // border: none;
   transition: color 250ms linear, text-decoration-line 250ms linear;
   &:hover {
+    transform: scale(1.02);  
     color: #0a8817;
     text-decoration-line: underline;
   }
 
   &:focus {
+    transform: scale(1.02);  
     color: #fff;
     text-decoration-line: underline;
   }
@@ -121,11 +127,13 @@
   transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
   &:hover {
+    transform: scale(1.02);  
     background-color: #0a8817;
     border-color: #0a8817;
   }
 
   &:focus {
+    transform: scale(1.02);  
     background-color: #0a8817;
     border-color: #0a8817;
     color: #fff;
@@ -153,10 +161,12 @@
   color: $btn;
   transition: color 250ms linear, border-color 250ms linear, fill 250ms linear;
   &:hover {
+    transform: scale(1.02);  
     border-color: #0a8817;
   }
 
   &:focus {
+    transform: scale(1.02);  
     border-color: #0a8817;
     color: #fff;
     fill: #fff;
@@ -184,11 +194,13 @@
   transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
   &:hover {
+    transform: scale(1.02);  
     background-color: #0a8817;
     border-color: #0a8817;
   }
 
   &:focus {
+    transform: scale(1.02);  
     background-color: #0a8817;
     border-color: #0a8817;
     color: #fff;

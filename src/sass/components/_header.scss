@@ -89,8 +89,12 @@
   line-height: 20px;
   align-items: center;
   color: #fcfcfc;
+  transition: color 250ms linear;
   &:hover {
     color: #f8d24e;
+  }
+  &:active {
+    transform: scale(0.9); 
   }
 }
 
