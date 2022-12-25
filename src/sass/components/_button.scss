@@ -179,7 +179,7 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: #000000;
-
+  transition: color 950ms linear, background-color 950ms linear, border-color 950ms linear, fill 950ms linear;
   &:hover {
     background-color: #0a8817;
     border-color: #0a8817;
@@ -197,3 +197,5 @@
     background-color: $third;
   }
 }
+
+
