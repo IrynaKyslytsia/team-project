@@ -10,16 +10,14 @@
   border-radius: 10px;
   // background-color: initial;
   // color: $btn;
-  transition: transform 250ms linear, color 250ms linear, border-color 250ms linear;
+  transition: color 250ms linear, border-color 250ms linear;
   &:hover {
     border-color: #0a8817;
-    transform: scale(1.02);  
   }
 
   &:focus {
     border-color: #0a8817;
-    color: #fff;
-    transform: scale(1.02);  
+    color: #fff; 
   }
 
   &--disabled {
@@ -48,16 +46,14 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-  transition: transform 250ms linear, color 250ms linear, background-color 250ms linear,
+  transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
-  &:hover {
-    transform: scale(1.02);  
+  &:hover {  
     background-color: #0a8817;
     border-color: #0a8817;
   }
 
-  &:focus {
-    transform: scale(1.02);  
+  &:focus { 
     background-color: #0a8817;
     border-color: #0a8817;
     color: #fff;
@@ -84,15 +80,13 @@
   color: $accent;
   // background-color: initial;
   // border: none;
-  transition: transform 250ms linear, color 250ms linear, text-decoration-line 250ms linear;
+  transition: color 250ms linear, text-decoration-line 250ms linear;
   &:hover {
-    transform: scale(1.02);  
     color: #0a8817;
     text-decoration-line: underline;
   }
 
-  &:focus {
-    transform: scale(1.02);  
+  &:focus {  
     color: #fff;
     text-decoration-line: underline;
   }
@@ -124,16 +118,14 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: $btn;
-  transition: transform 250ms linear, color 250ms linear, background-color 250ms linear,
+  transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
   &:hover {
-    transform: scale(1.02);  
     background-color: #0a8817;
     border-color: #0a8817;
   }
 
   &:focus {
-    transform: scale(1.02);  
     background-color: #0a8817;
     border-color: #0a8817;
     color: #fff;
@@ -159,14 +151,12 @@
   border-radius: 10px;
   border: 2px solid $accent;
   color: $btn;
-  transition: transform 250ms linear, color 250ms linear, border-color 250ms linear, fill 250ms linear;
-  &:hover {
-    transform: scale(1.02);  
+  transition: color 250ms linear, border-color 250ms linear, fill 250ms linear;
+  &:hover { 
     border-color: #0a8817;
   }
 
-  &:focus {
-    transform: scale(1.02);  
+  &:focus { 
     border-color: #0a8817;
     color: #fff;
     fill: #fff;
@@ -191,16 +181,14 @@
   border-radius: 10px;
   border: 1px solid $accent;
   color: #000000;
-  transition: transform 250ms linear, color 250ms linear, background-color 250ms linear,
+  transition: color 250ms linear, background-color 250ms linear,
     border-color 250ms linear, fill 250ms linear;
-  &:hover {
-    transform: scale(1.02);  
+  &:hover {  
     background-color: #0a8817;
     border-color: #0a8817;
   }
 
-  &:focus {
-    transform: scale(1.02);  
+  &:focus { 
     background-color: #0a8817;
     border-color: #0a8817;
     color: #fff;
