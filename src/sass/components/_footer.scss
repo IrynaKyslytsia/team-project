@@ -12,18 +12,18 @@
 	position: relative;
 	background-color: #84A178;
 
-	height: 372px;
+	// height: 372px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 
-	@media screen and (min-width: 768px) {
-		height: 253px;
-	}
+	// @media screen and (min-width: 768px) {
+	// 	height: 253px;
+	// }
 
-	@media screen and (min-width: 1200px) {
-		height: 214px;
-	}
+	// @media screen and (min-width: 1200px) {
+	// 	height: 214px;
+	// }
 
 }
 
