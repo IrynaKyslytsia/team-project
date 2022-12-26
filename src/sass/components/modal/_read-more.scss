@@ -1,5 +1,4 @@
 .read {
-
   background-color: $second;
   border: 2px solid $accent;
   border-radius: 10px;
@@ -52,6 +51,7 @@
     width: 224px;
     height: 199px;
   }
+}
 
 .read__video {
   border-radius: 10px;
@@ -65,5 +65,4 @@
   line-height: calc(20 / 14);
   color: #131313;
   margin-top: 32px;
-
 }
