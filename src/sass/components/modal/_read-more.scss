@@ -1,5 +1,5 @@
 .read {
-  // position: absolute;
+
   background-color: $second;
   border: 2px solid $accent;
   border-radius: 10px;
@@ -9,9 +9,9 @@
   transition: transform $duration-function $timing-function;
 
   @media screen and (min-width: 480px) {
-    // top: 0;
     width: 280px;
     height: 459px;
+    padding: 28px;
   }
 
   @media screen and (min-width: 768px) {
@@ -34,14 +34,24 @@
   &__tittle {
     font-family: 'Seymour One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     text-align: center;
-    color: #131313;
+    @include fonts(16, 24, 400);
+    color: $main;
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
-}
+  &__video-wraper {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__video {
+    width: 224px;
+    height: 199px;
+
 
 .read__video {
   border-radius: 10px;
@@ -55,4 +65,5 @@
   line-height: calc(20 / 14);
   color: #131313;
   margin-top: 32px;
+
 }
