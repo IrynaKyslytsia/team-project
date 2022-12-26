@@ -15,8 +15,8 @@
 
   &__pre-title {
     display: block;
-    font-size: 18px;
-    line-height: calc(22 / 18);
+
+    @include fonts(18, 22, 700);
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 12px;
@@ -32,18 +32,16 @@
 
   &__title {
     font-family: 'Seymour One';
-    font-size: 30px;
-    line-height: calc(38 / 30);
+    font-style: normal;
     text-align: center;
-    letter-spacing: 0.04em;
+    @include fonts(30, 38, 400, 0.04em);
+
     text-transform: uppercase;
     margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 72px;
-      font-size: 34px;
-      line-height: calc(43 / 34);
-      letter-spacing: 0.06em;
+      @include fonts(34, 43, 400, 0.06em);
     }
     @media screen and (min-width: 1200px) {
       display: none;
@@ -132,9 +130,7 @@
 }
 
 .about__text {
-  font-size: 12px;
-  line-height: calc(21 / 12);
-  letter-spacing: 0.04em;
+  @include fonts(12, 21, 400, 0.04em);
 }
 .about__text--textone {
   margin-bottom: 4px;
@@ -142,8 +138,7 @@
     margin-bottom: 8px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 16px;
-    line-height: calc(28 / 16);
+    @include fonts(16, 28, 400, 0.04em);
   }
 }
 .about__text--texttwo {
