@@ -149,6 +149,8 @@
 	&:hover,
 	&:focus {
 		fill: #FCFCFC;
+
+		transition: transform $duration-function $timing-function;
 	}
 
 }
