@@ -31,7 +31,7 @@
 //   border-radius: 10px;
 // }
 
-.modal-ingredients {
+.modal-ing {
   overflow-y: auto;
   padding: 28px 20px;
   min-width: 280px;
@@ -41,7 +41,7 @@
   border-radius: 10px;
 }
 
-.modal-close-btn {
+.ing-close-btn {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -58,15 +58,16 @@
   height: 11px;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.ing-close-btn:hover,
+.ing-close-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.modal-title {
+.ing-title {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 142px;
   color: $basic-black;
   font-family: 'Seymour One';
   font-size: 20px;
@@ -75,13 +76,13 @@
   text-align: center;
 }
 
-.modal-img {
+.ing-img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
 
-.modal-img-card {
+.ing-img-card {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -90,7 +91,7 @@
   height: 132px;
 }
 
-.modal-img-card::after {
+.ing-img-card::after {
   position: absolute;
   z-index: -1;
   display: block;
@@ -108,7 +109,7 @@
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
-.modal-shift-list {
+.ing-shift-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +117,7 @@
   gap: 10px;
 }
 
-.modal-shift-item {
+.ing-shift-item {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -131,7 +132,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.modal-shift-text {
+.ing-shift-text {
   font-family: 'Montserrat';
   font-size: 10px;
   line-height: 1.2;
@@ -139,7 +140,7 @@
   color: $basic-black;
 }
 
-.modal-shift-inside {
+.ing-shift-inside {
   position: relative;
   top: -2px;
   display: flex;
@@ -153,7 +154,7 @@
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
 
-.modal-shift-value {
+.ing-shift-value {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 10px;
@@ -162,7 +163,7 @@
   color: $basic-black;
 }
 
-.modal-text {
+.ing-text {
   margin-bottom: 24px;
   font-family: 'Montserrat';
   font-weight: 500;
@@ -196,12 +197,12 @@
   color: $basic-black;
 }
 
-.modal-form {
+.ing-form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-form-input {
+.ing-form-input {
   margin-bottom: 16px;
   padding: 11px;
   min-width: 240px;
@@ -211,7 +212,7 @@
   border-radius: 10px;
 }
 
-.modal-form-input::placeholder {
+.ing-form-input::placeholder {
   font-family: 'Montserrat';
   font-size: 14px;
   line-height: 1.4;
@@ -224,7 +225,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 } */
 
-.modal-form-comment {
+.ing-form-comment {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -243,14 +244,14 @@
   border-color: var(--accent-color);
 } */
 
-.modal-form-comment::placeholder {
+.ing-form-comment::placeholder {
   font-family: 'Montserrat';
   font-size: 14px;
   line-height: 1.4;
   color: $basic-black;
 }
 
-.modal-form-submit {
+.ing-form-submit {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 12px 34px;
@@ -266,19 +267,19 @@
   line-height: 1.2;
 }
 
-.modal-form-submit:hover,
-.modal-form-submit:focus {
+.ing-form-submit:hover,
+.ing-form-submit:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 @media screen and (min-width: 768px) {
-  .modal-ingredients {
+  .modal-ing {
     max-width: 568px;
     height: 996px;
     padding: 32px 40px;
   }
 
-  .modal-close-btn {
+  .ing-close-btn {
     width: 24px;
     height: 24px;
   }
@@ -288,37 +289,38 @@
     height: 13px;
   }
 
-  .modal-title {
+  .ing-title {
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .ing-img-card {
     margin-bottom: 24px;
   }
 
-  .modal-img-card {
-    margin-bottom: 24px;
-  }
-
-  .modal-shift-list {
+  .ing-shift-list {
     justify-content: center;
     gap: 20px;
     margin-bottom: 48px;
   }
 
-  .modal-shift-item {
+  .ing-shift-item {
     padding-bottom: 14px;
     width: 65px;
     height: 90px;
   }
 
-  .modal-shift-text {
+  .ing-shift-text {
     font-size: 12px;
     line-height: 1.25;
   }
 
-  .modal-shift-inside {
+  .ing-shift-inside {
     width: 53px;
     height: 53px;
   }
 
-  .modal-shift-value {
+  .ing-shift-value {
     font-size: 12px;
     line-height: 2.33;
   }
@@ -327,22 +329,22 @@
     margin-bottom: 48px;
   }
 
-  .modal-form {
+  .ing-form {
     align-items: center;
   }
 
-  .modal-form-input {
+  .ing-form-input {
     padding-left: 16px;
     width: 368px;
   }
 
-  .modal-form-comment {
+  .ing-form-comment {
     margin-bottom: 32px;
     padding-left: 16px;
     width: 368px;
   }
 
-  .modal-form-submit {
+  .ing-form-submit {
     width: 121px;
   }
 }
