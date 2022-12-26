@@ -1,5 +1,5 @@
 .line {
-	border-bottom: 1px solid #E1E1E1;
+	border-bottom: 1px solid $line;
 
 	@media screen and (min-width: 320px) and (max-width: 480px) {
 		margin: 0;
@@ -13,7 +13,7 @@
 }
 
 .footer {
-	background-color: #84A178;
+	background-color: $background-color;
 
 	display: flex;
 	flex-direction: column;
@@ -36,7 +36,7 @@
 	line-height: calc(22 / 18);
 	text-transform: uppercase;
 
-	color: #FCFCFC;
+	color: $second;
 
 	@media screen and (min-width: 768px) {
 		width: 352px;
@@ -69,7 +69,7 @@
 	text-transform: uppercase;
 	margin-bottom: 60px;
 
-	color: #FCFCFC;
+	color: $second;
 
 	@media screen and (min-width: 768px) {
 		width: 352px;
@@ -134,17 +134,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #F8D24E;
+	background-color: $accent;
 	border-radius: 50%;
 }
 
 .footer__socials-icon {
-	fill: #84A178;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	fill: $background;
 
 	&:hover,
 	&:focus {
-		fill: #FCFCFC;
+		fill: $second;
 
 		transition: transform $duration-function $timing-function;
 	}
@@ -168,7 +167,7 @@
 	font-size: 12px;
 	line-height: calc(22 / 12);
 
-	color: #131313;
+	color: $main;
 
 	@media screen and (min-width: 768px) {
 		font-size: 16px;
@@ -185,7 +184,7 @@
 
 .footer__tel {
 	margin-left: 4px;
-	color: #FCFCFC;
+	color: $second;
 }
 
 .trademark-container {
@@ -204,7 +203,7 @@
 	font-size: 15px;
 	line-height: calc(21 / 14);
 
-	color: #7A7A7A;
+	color: $accent-footer;
 
 	@media screen and (min-width: 768px) {
 		width: 298px;
