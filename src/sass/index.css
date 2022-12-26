@@ -89,13 +89,15 @@ img {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0;
   list-style: none;
   max-width: 480px;
@@ -137,24 +139,22 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  max-width: 1199px;
+  width: 100%;
   height: 100vh;
   padding: 25px;
   background-color: #84a178;
   z-index: 999;
-  transform: translateX(1000%);
   transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 1199px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
   transform: translateX(0);
-}
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: #000;
 }
 
 .mobile-menu .link {
@@ -173,8 +173,36 @@ img {
   color: #131313;
 }
 
-.mobile-menu .button__buy {
-  display: block;
+.outline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1199px;
+}
+
+.header-logo {
+  width: 40px;
+  height: 37px;
+  background-image: url("../images/header/logo-mob.png");
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header-logo {
+    background-image: url("../images/header/logo-mob@2x.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
+    width: 48px;
+    height: 44px;
+    background-image: url("../images/header/logo-tab.png");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .header-logo {
+    background-image: url("../images/header/logo-tab@2x.png");
+  }
 }
 
 .button__product {
@@ -244,17 +272,22 @@ img {
   font-size: 12px;
   line-height: 1.25;
   text-align: center;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #f8d24e;
+  transition: color 250ms linear, -webkit-text-decoration-line 250ms linear;
   transition: color 250ms linear, text-decoration-line 250ms linear;
+  transition: color 250ms linear, text-decoration-line 250ms linear, -webkit-text-decoration-line 250ms linear;
 }
 .button__made:hover {
   color: #0a8817;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 .button__made:focus {
   color: #fcfcfc;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 .button__made--disabled {
   color: #ababab;
@@ -403,7 +436,7 @@ img {
   background-image: url("../images/header/logo-mob.png");
   background-size: cover;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header__logo {
     background-image: url("../images/header/logo-mob@2x.png");
   }
@@ -415,7 +448,7 @@ img {
     background-image: url("../images/header/logo-tab.png");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .header__logo {
     background-image: url("../images/header/logo-tab@2x.png");
   }
@@ -427,7 +460,7 @@ img {
     background-image: url("../images/header/logo-desktop.png");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .header__logo {
     background-image: url("../images/header/logo-desktop@2x.png");
   }
@@ -481,9 +514,9 @@ img {
 }
 
 .header .menu-toggle {
+  display: flex;
   min-height: 40px;
   min-width: 40px;
-  display: flex;
   align-items: center;
   background-color: transparent;
   cursor: pointer;
@@ -689,7 +722,7 @@ img {
   background-image: url(../images/product/bg/Bg-mobile.jpg);
   background-size: cover;
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .product {
     background-image: url(../images/product/bg/Bg-mobile-2x.jpg);
   }
@@ -699,7 +732,7 @@ img {
     background-image: url(../images/product/bg/Bg-tablet.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .product {
     background-image: url(../images/product/bg/Bg-tablet-2x.jpg);
   }
@@ -709,7 +742,7 @@ img {
     background-image: url(../images/product/bg/Bg-desktop.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .product {
     background-image: url(../images/product/bg/Bg-desktop-2x.jpg);
   }
@@ -1183,7 +1216,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -1209,7 +1243,8 @@ img {
   .adv__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 80px;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
     padding: 0 44px;
   }
 }
@@ -1294,7 +1329,7 @@ img {
   background-position: -60px -260px;
   background-image: url("/src/images/reviews/backgroud_mobile.jpg");
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .reviews {
     background-image: url("/src/images/reviews/backgroud_mobile@2x.jpg");
   }
@@ -1304,7 +1339,7 @@ img {
     background-image: url("/src/images/reviews/background_tablet.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .reviews {
     background-image: url("/src/images/reviews/background_tablet@2x.jpg");
   }
@@ -1314,7 +1349,7 @@ img {
     background-image: url("/src/images/reviews/backgroud_desktop.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .reviews {
     background-image: url("/src/images/reviews/backgroud_desktop@2x.jpg");
   }
@@ -2071,9 +2106,9 @@ img {
 }
 
 .product-modal {
+  padding: 0;
   box-sizing: border-box;
   position: absolute;
-  padding: 24px;
   text-align: center;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
@@ -2081,7 +2116,7 @@ img {
 }
 @media screen and (min-width: 280px) {
   .product-modal {
-    left: 50%;
+    top: 0;
     padding: 26px;
     width: 280px;
     height: 991px;
@@ -2093,9 +2128,10 @@ img {
   .product-modal {
     top: 50%;
     left: 50%;
-    padding: 30px;
+    max-width: 568px;
     width: 568px;
     height: 644px;
+    padding: 30px 52px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -2157,7 +2193,7 @@ img {
 .product-modal__checkbox-form__item {
   position: relative;
   width: 132px;
-  height: 136px;
+  height: 135px;
 }
 @media screen and (max-width: 767px) {
   .product-modal__checkbox-form__item:not(:last-child) {
@@ -2277,8 +2313,20 @@ img {
     height: 42px;
   }
 }
+.product-modal__form__input:not(:-moz-placeholder-shown):required:valid {
+  border-color: green;
+}
+.product-modal__form__input:not(:-ms-input-placeholder):required:valid {
+  border-color: green;
+}
 .product-modal__form__input:not(:placeholder-shown):required:valid {
   border-color: green;
+}
+.product-modal__form__input:not(:-moz-placeholder-shown):required:invalid {
+  border-color: red;
+}
+.product-modal__form__input:not(:-ms-input-placeholder):required:invalid {
+  border-color: red;
 }
 .product-modal__form__input:not(:placeholder-shown):required:invalid {
   border-color: red;
@@ -2306,6 +2354,7 @@ img {
   }
 }
 .product-modal__btn {
+  width: auto;
   box-sizing: border-box;
   margin-top: -5px;
   margin-left: auto;
@@ -2547,6 +2596,20 @@ img {
   border-radius: 10px;
 }
 
+.modal-form-input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+
+.modal-form-input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+
 .modal-form-input::placeholder {
   font-family: "Montserrat";
   font-size: 14px;
@@ -2577,6 +2640,18 @@ img {
   outline: none;
   border-color: var(--accent-color);
 } */
+.modal-form-comment::-moz-placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+.modal-form-comment:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
 .modal-form-comment::placeholder {
   font-family: "Montserrat";
   font-size: 14px;
@@ -2744,7 +2819,7 @@ img {
   border-radius: 50%;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .modal__image::after {
     background-size: contain;
   }
@@ -2770,7 +2845,7 @@ img {
   border-radius: 50%;
   box-shadow: 0px 5.26027px 19.726px #f8d24e;
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .modal__image--coffee::after {
     background-size: contain;
   }
