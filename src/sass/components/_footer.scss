@@ -9,7 +9,6 @@
 }
 
 .footer {
-	position: relative;
 	background-color: #84A178;
 
 	// height: 372px;
@@ -146,10 +145,13 @@
 
 .footer__socials-icon {
 	fill: #84A178;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
 		fill: #FCFCFC;
+
+		transition: transform $duration-function $timing-function;
 	}
 
 }
