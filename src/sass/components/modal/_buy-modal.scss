@@ -273,25 +273,25 @@
       }
     }
   }
-  &__btn {
-    width: auto;
-    box-sizing: border-box;
-    margin-top: -5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px 34px;
+  // &__btn {
+  //   width: auto;
+  //   box-sizing: border-box;
+  //   margin-top: -5px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   padding: 12px 34px;
 
-    font-weight: $button-text-weight;
-    font-size: 14px;
-    line-height: 1.214;
-    display: flex;
-    align-items: center;
-    text-align: center;
+  //   font-weight: $button-text-weight;
+  //   font-size: 14px;
+  //   line-height: 1.214;
+  //   display: flex;
+  //   align-items: center;
+  //   text-align: center;
 
-    border-radius: 10px;
-    color: $main;
-    background-color: $accent;
-  }
+  //   border-radius: 10px;
+  //   color: $main;
+  //   background-color: $accent;
+  // }
 }
 // рамка чекбокса
 .bgc {
