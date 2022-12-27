@@ -97,18 +97,38 @@ img {
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0;
-  list-style: none;
-  max-width: 480px;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100vh;
+  background-color: #84a178;
+  z-index: 25;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
-
-@media (mix-width: 767px) {
+@media screen and (min-width: 1200px) {
   .menu {
     display: none;
   }
 }
+
+.menu.is-open {
+  transform: translateX(0);
+}
+
+.container__mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .container__mob {
+    width: 320px;
+  }
+}
+
 .menu__toggle {
   min-height: 40px;
   min-width: 40px;
@@ -133,31 +153,6 @@ img {
     display: none;
   }
 }
-.menu-container {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  max-width: 1199px;
-  width: 100%;
-  height: 100vh;
-  padding: 25px;
-  background-color: #84a178;
-  z-index: 25;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-}
-@media screen and (min-width: 1199px) {
-  .menu-container {
-    display: none;
-  }
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
-}
-
 .nav-mob__link {
   display: flex;
   justify-content: center;
@@ -179,10 +174,7 @@ img {
 
 .menu__header {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
-  max-width: 1199px;
 }
 
 .menu__logo {
@@ -335,7 +327,7 @@ img {
   color: #ababab;
 }
 
-.button__franhise {
+.button__franchise {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,15 +343,15 @@ img {
   color: #000000;
   transition: color 250ms linear, border-color 250ms linear, fill 250ms linear;
 }
-.button__franhise:hover {
+.button__franchise:hover {
   border-color: #0a8817;
 }
-.button__franhise:focus {
+.button__franchise:focus {
   border-color: #0a8817;
   color: #fcfcfc;
   fill: #fcfcfc;
 }
-.button__franhise--disabled {
+.button__franchise--disabled {
   color: #ababab;
 }
 
@@ -416,6 +408,7 @@ img {
 @media screen and (max-width: 767px) {
   .header .container {
     padding-top: 12px;
+    max-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1042,7 +1035,8 @@ img {
 .about__pre-title {
   display: block;
   font-size: 18px;
-  line-height: 1.2222222222;
+  line-height: calc(22 / 18);
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -1061,9 +1055,11 @@ img {
 }
 .about__title {
   font-family: "Seymour One";
-  font-size: 30px;
-  line-height: 1.2666666667;
+  font-style: normal;
   text-align: center;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -1072,7 +1068,8 @@ img {
   .about__title {
     margin-bottom: 72px;
     font-size: 34px;
-    line-height: 1.2647058824;
+    line-height: calc(43 / 34);
+    font-weight: 400;
     letter-spacing: 0.06em;
   }
 }
@@ -1174,7 +1171,8 @@ img {
 
 .about__text {
   font-size: 12px;
-  line-height: 1.75;
+  line-height: calc(21 / 12);
+  font-weight: 400;
   letter-spacing: 0.04em;
 }
 
@@ -1189,7 +1187,9 @@ img {
 @media screen and (min-width: 1200px) {
   .about__text--textone {
     font-size: 16px;
-    line-height: 1.75;
+    line-height: calc(28 / 16);
+    font-weight: 400;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -1287,16 +1287,20 @@ img {
   }
 }
 .adv__value {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1.2222222222;
-  text-align: center;
+  line-height: calc(44 / 36);
+  font-weight: 700;
   letter-spacing: 0.04em;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .adv__value {
+    font-size: 48px;
+    line-height: calc(59 / 48);
+    font-weight: 700;
+    letter-spacing: 0.04em;
     font-size: 48px;
     line-height: 1.2291666667;
     margin-bottom: 12px;
@@ -1305,24 +1309,33 @@ img {
 @media screen and (min-width: 1200px) {
   .adv__value {
     font-size: 58px;
+    line-height: calc(71 / 58);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 58px;
     line-height: 1.224137931;
   }
 }
 .adv__text {
   font-size: 12px;
-  line-height: 1.6666666667;
+  line-height: calc(20 / 12);
+  font-weight: 700;
+  letter-spacing: 0.04em;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .adv__text {
     font-size: 14px;
-    line-height: 1.7142857143;
+    line-height: calc(24 / 14);
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 1200px) {
   .adv__text {
     font-size: 16px;
-    line-height: 1.75;
+    line-height: calc(28 / 16);
+    font-weight: 400;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -1355,11 +1368,30 @@ img {
     background-image: url("/src/images/reviews/backgroud_desktop@2x.jpg");
   }
 }
+.reviews__pagination.swiper-pagination {
+  bottom: 0;
+}
+.reviews__pagination .swiper-pagination-bullet {
+  background: #939eac;
+}
+.reviews__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #06071b;
+}
 
 .reviews .container {
   height: 960px;
   position: relative;
-  top: -80px;
+  top: -32px;
+}
+@media screen and (min-width: 768px) {
+  .reviews .container {
+    top: -144px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews .container {
+    top: -98px;
+  }
 }
 
 .slider-img__items {
@@ -1370,6 +1402,14 @@ img {
 
 .slider-img__item {
   margin-bottom: 80px;
+}
+.slider-img__item.swiper-slide-active .team__desc p {
+  transform: translateY(0);
+  opacity: 1;
+}
+.slider-img__item.is-play .team__desc p {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .slider__img {
@@ -1438,6 +1478,11 @@ img {
     line-height: 1.875;
   }
 }
+.reviewer__comment p {
+  transition: ease-in-out 0.4s;
+  opacity: 0;
+  transform: translateY(100%);
+}
 
 .reviewer__info {
   font-family: "Montserrat";
@@ -1454,6 +1499,18 @@ img {
     line-height: 1.875;
     padding: 32px;
   }
+}
+
+.reviews__pagination .swiper-pagination {
+  bottom: 0;
+}
+
+.reviews__pagination .swiper-pagination-bullet {
+  background: #706868;
+}
+
+.reviews__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #84A178;
 }
 
 .contacts {
@@ -1845,7 +1902,7 @@ img {
 }
 
 .line {
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .line {
@@ -1861,7 +1918,7 @@ img {
 }
 
 .footer {
-  background-color: #84A178;
+  background-color: rgb(132, 161, 120);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1880,7 +1937,7 @@ img {
   font-size: 18px;
   line-height: 1.2222222222;
   text-transform: uppercase;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
   .footer__title {
@@ -1910,7 +1967,7 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 60px;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 @media screen and (min-width: 768px) {
   .footer__description {
@@ -1978,16 +2035,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F8D24E;
+  background-color: #f8d24e;
   border-radius: 50%;
 }
 
 .footer__socials-icon {
-  fill: #84A178;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #84a178;
 }
 .footer__socials-icon:hover, .footer__socials-icon:focus {
-  fill: #FCFCFC;
+  fill: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -2025,7 +2081,7 @@ img {
 
 .footer__tel {
   margin-left: 4px;
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 
 .trademark-container {
@@ -2042,7 +2098,7 @@ img {
   font-weight: 700;
   font-size: 15px;
   line-height: 1.5;
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 @media screen and (min-width: 768px) {
   .trademark {
@@ -2094,8 +2150,9 @@ img {
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 30px;
-  border-radius: 3px;
-  background-color: #fff;
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
   transition: 0.3s all;
 }
 
@@ -2127,7 +2184,8 @@ img {
 .product-modal {
   padding: 0;
   box-sizing: border-box;
-  position: absolute;
+  overflow-y: scroll;
+  max-height: 100%;
   text-align: center;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
@@ -2145,6 +2203,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .product-modal {
+    overflow-y: hidden;
     top: 50%;
     left: 50%;
     max-width: 568px;
@@ -2414,41 +2473,164 @@ img {
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
-.modal__franchise-container {
+.modal-franchise__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100vw;
+}
+@media screen and (min-width: 768px) {
+  .modal-franchise__container {
+    max-width: 568px;
+  }
 }
 
-.modal__franchise-title {
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: inherit;
+}
+.close-button:hover, .close-button:focus {
+  fill: #f8d24e;
+}
+
+.modal-franchise__title {
+  font-family: "Seymour One";
+  font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .modal__franchise-title {
-    max-width: 322px;
+  .modal-franchise__title {
+    font-size: 20px;
+    line-height: 1.4;
     margin-bottom: 24px;
   }
 }
 
-.modal__franchise-text {
+.modal-franchise__text {
+  text-align: left;
   margin-bottom: 24px;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: normal;
 }
 @media screen and (min-width: 768px) {
-  .modal__franchise-text {
+  .modal-franchise__text {
     margin-bottom: 32px;
-    padding: 0 24px;
-    font-size: 1.6rem;
   }
 }
 
+.modal-franchise__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modal-franchise__input {
+  margin-bottom: 12px;
+  padding: 12px;
+  width: 100%;
+  height: 42px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid rgb(132, 161, 120);
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .modal-franchise__input {
+    margin-bottom: 16px;
+  }
+}
+
+.modal-franchise__input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+
+.modal-franchise__input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+
+.modal-franchise__input::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+
+.modal-franchise__comment {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  padding: 12px;
+  width: 100%;
+  height: 84px;
+  resize: none;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid rgb(132, 161, 120);
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .modal-franchise__comment {
+    margin-bottom: 32px;
+  }
+}
+
+.modal-franchise__comment::-moz-placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+
+.modal-franchise__comment:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+
+.modal-franchise__comment::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(19, 19, 19);
+}
+
+.modal-franchise__btn {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 12px 34px;
+  width: 132px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: rgb(19, 19, 19);
+  background-color: rgb(248, 210, 78);
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.modal-franchise__btn:hover,
+.modal-franchise__btn:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .modal-ing {
+  top: 0;
+  transform: translate(-50%, 0);
   overflow-y: auto;
   padding: 28px 20px;
   min-width: 280px;
-  height: 968px;
+  max-height: 100%;
   background-color: rgb(252, 252, 252);
   border: 2px solid rgb(248, 210, 78);
   border-radius: 10px;
@@ -2473,7 +2655,7 @@ img {
 
 .ing-close-btn:hover,
 .ing-close-btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  fill: rgb(248, 210, 78);
 }
 
 .ing-title {
@@ -2614,6 +2796,7 @@ img {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid rgb(132, 161, 120);
   border-radius: 10px;
+  outline: none;
 }
 
 .ing-form-input::-moz-placeholder {
@@ -2654,6 +2837,7 @@ img {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid rgb(132, 161, 120);
   border-radius: 10px;
+  outline: none;
 }
 
 /* .modal-form-comment:focus {
@@ -2956,4 +3140,76 @@ img {
   display: flex;
   justify-content: space-between;
   line-height: 1.9;
+}
+
+.read {
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .read {
+    width: 280px;
+    height: 459px;
+    padding: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .read {
+    width: 568px;
+    height: 449px;
+  }
+}
+.read__close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  fill: #131313;
+  background-color: #fcfcfc;
+}
+.read__close-btn:hover > .close-icon, .read__close-btn:focus > .close-icon {
+  fill: #f8d24e;
+}
+.read__tittle {
+  font-family: "Seymour One";
+  font-style: normal;
+  text-align: center;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  font-weight: 400;
+  color: #131313;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .read__tittle {
+    margin-bottom: 32px;
+  }
+}
+.read__video-wraper {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .read__video-wraper {
+    margin-bottom: 32px;
+  }
+}
+.read__video {
+  width: 224px;
+  height: 199px;
+}
+
+.read__video {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.read__description {
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: #131313;
+  margin-top: 32px;
 }/*# sourceMappingURL=index.css.map */

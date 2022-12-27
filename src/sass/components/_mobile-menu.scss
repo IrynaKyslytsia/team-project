@@ -1,18 +1,35 @@
+
 .menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0;
-  list-style: none;
-  max-width: 480px;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-}
-
-@media (mix-width: 767px) {
-  .menu {
+  height: 100vh;
+  background-color: #84a178;
+  z-index: 25;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  @media screen and(min-width: 1200px) {
     display: none;
   }
 }
+
+.menu.is-open {
+  transform: translateX(0);
+}
+.container__mob{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 480px;
+
+  @media screen and(min-width: 768px) {
+    width: 320px;
+  }
+ }
+
 
 .menu__toggle {
   min-height: 40px;
@@ -40,29 +57,6 @@
 }
 
 
-.menu-container {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  max-width: 1199px;
-  width: 100%;
-  height: 100vh;
-  padding: 25px;
-  background-color: #84a178;
-  z-index: 25;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-
-  @media screen and(min-width: 1199px) {
-    display: none;
-  }
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
-}
 .nav-mob__link {
   display: flex;
   justify-content: center;
@@ -84,10 +78,7 @@
 
 .menu__header {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   width: 100%;
-  max-width: 1199px;
 }
 
 .menu__logo {
