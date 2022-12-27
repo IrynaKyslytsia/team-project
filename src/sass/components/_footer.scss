@@ -127,6 +127,11 @@
 	}
 }
 
+.footer__socials-icon {
+	
+	fill: $background;
+
+}
 
 .footer__link {
 	width: 100%;
@@ -143,16 +148,8 @@
 	&:focus{
 
 		fill: $second;
-
-		transition: color $duration-function $timing-function;	
 		transform: scale(1.2);
 	}
-
-}
-
-.footer__socials-icon {
-	
-	fill: $background;
 
 }
 
