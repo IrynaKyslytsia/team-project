@@ -136,17 +136,23 @@
 	justify-content: center;
 	background-color: $accent;
 	border-radius: 50%;
+
+	transition: transform $duration-function $timing-function;
+
+	&:hover,
+	&:focus{
+
+		fill: $second;
+
+		transition: color $duration-function $timing-function;	
+		transform: scale(1.2);
+	}
+
 }
 
 .footer__socials-icon {
+	
 	fill: $background;
-
-	&:hover,
-	&:focus {
-		fill: $second;
-
-		transition: transform $duration-function $timing-function;
-	}
 
 }
 
