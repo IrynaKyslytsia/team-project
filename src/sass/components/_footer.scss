@@ -143,8 +143,6 @@
 	&:focus{
 
 		fill: $second;
-
-		transition: color $duration-function $timing-function;	
 		transform: scale(1.2);
 	}
 
