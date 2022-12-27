@@ -1,3 +1,9 @@
+.btn {
+  border: 0;
+  outline: none;
+  margin: 0;
+}
+
 .button__product {
   display: block;
   padding: 11px 26px;
@@ -26,40 +32,6 @@
     line-height: calc(18 / 14);
   }
 }
-
-// .button__more {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 12px 0;
-//   width: 164px;
-//   height: 42px;
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: calc(18 / 14);
-//   background: $accent;
-//   border-radius: 10px;
-//   border: 1px solid $accent;
-//   color: $btn;
-//   transition: color 250ms linear, background-color 250ms linear,
-//     border-color 250ms linear, fill 250ms linear;
-//   &:hover {
-//     background-color: $btn-accent;
-//     border-color: $btn-accent;
-//   }
-
-//   &:focus {
-//     background-color: $btn-accent;
-//     border-color: $btn-accent;
-//     color: $second;
-//     fill: $second;
-//   }
-
-//   &--disabled {
-//     border-color: $third;
-//     background-color: $third;
-//   }
-// }
 
 .button__made {
   display: block;
@@ -92,41 +64,6 @@
     padding-bottom: 12px;
     font-size: 14px;
     line-height: calc(17 / 14);
-    // width: 115px;
-  }
-}
-
-.button__locations {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 0;
-  width: 196px;
-  height: 42px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  background: $accent;
-  border-radius: 10px;
-  border: 1px solid $accent;
-  color: $btn;
-  transition: color 250ms linear, background-color 250ms linear,
-    border-color 250ms linear, fill 250ms linear;
-
-  &:hover {
-    background-color: $btn-accent;
-    border-color: $btn-accent;
-  }
-
-  &:focus {
-    background-color: $btn-accent;
-    border-color: $btn-accent;
-    color: $second;
-    fill: $second;
-  }
-
-  &--disabled {
-    color: $third;
   }
 }
 
@@ -160,7 +97,7 @@
   }
 }
 
-.button__buy {
+.btn__open-modal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,8 +135,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: auto;
+    margin-right: auto;
     padding: 12px 34px;
     align-self: center;
     border: none;
@@ -210,10 +147,13 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-  .modal__btn:hover,
-  .modal__btn:focus {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  &:hover,
+  &:focus {
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
