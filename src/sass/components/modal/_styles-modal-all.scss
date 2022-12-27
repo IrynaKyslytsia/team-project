@@ -37,8 +37,9 @@
    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
    text-align: center;
    padding: 30px;
-   border-radius: 3px;
-   background-color: #fff;
+   background-color: $second;
+   border: 2px solid $accent;
+   border-radius: 10px;
    transition: 0.3s all;
 }
 
