@@ -27,6 +27,17 @@
       background-image: url('/src/images/reviews/backgroud_desktop@2x.jpg');
     }
   }
+  &__pagination {
+    &.swiper-pagination {
+      bottom: 0;
+    }
+    .swiper-pagination-bullet {
+      background: #939eac;
+      &.swiper-pagination-bullet-active {
+        background: #06071b;
+      }
+    }
+  }
 }
 
 .reviews .container {
@@ -49,6 +60,18 @@
 }
 .slider-img__item {
   margin-bottom: 80px;
+  &.swiper-slide-active {
+      .team__desc p {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  &.is-play {
+    .team__desc p {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 .slider__img {
   min-width: 280px;
@@ -100,6 +123,11 @@
     font-size: 16px;
     line-height: calc(30 / 16);
   }
+  p {
+    transition: ease-in-out 0.4s;
+    opacity: 0;
+    transform: translateY(100%);
+  }
 }
 .reviewer__info {
   font-family: 'Montserrat';
@@ -115,4 +143,13 @@
     line-height: calc(30 / 16);
     padding: 32px;
   }
+}
+.reviews__pagination .swiper-pagination {
+  bottom: 0;
+}
+.reviews__pagination .swiper-pagination-bullet {
+  background:#706868;
+}
+.reviews__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #84A178;
 }

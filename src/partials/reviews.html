@@ -1,4 +1,4 @@
-<section class="reviews">
+<section class="reviews" data-slider="reviews-slider">
     <div class="container">
         <h2 class="visually-hidden">Reviews</h2>
         <div class="slider-img">
@@ -25,10 +25,10 @@
                 </li>
             </ul>
         </div>
-        <div class="slider-ppl">
-            <div class="slider-ppl__wrap">
-                <ul class="slider-ppl__items list">
-                    <li class="slider-ppl__item">
+        <div class=" slider-ppl">
+            <div class="swiper slider-ppl__wrap">
+                <ul class="swiper-wrapper slider-ppl__items list">
+                    <li class="swiper-slide slider-ppl__item">
                         <div class="reviewer">
                             <img src="/src/images/reviews/emily-1.jpg" alt="Emily" class="reviewer__img">
                             <div class="reviewer_wrap">
@@ -37,12 +37,28 @@
                                 cozy atmosphere and polite staff.</p>
                             </div>
                             <p class="reviewer__info">Emily, Los Angeles</p>
-                            <svg class="dots" width="72" height="12">
-                                <use href="/src/images/icon-sprite.svg#icon-dots"></use>
-                            </svg>
+                        </div>
+                    </li>
+                    <li class="swiper-slide slider-ppl__item">
+                        <div class="reviewer">
+                            <img src="/src/images/reviews/bryan.jpg" alt="Emily" class="reviewer__img">
+                            <div class="reviewer_wrap">
+                                <p class="reviewer__comment">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
+                            </div>
+                            <p class="reviewer__info">Bryan, New-York</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide slider-ppl__item">
+                        <div class="reviewer">
+                            <img src="/src/images/reviews/diana.jpg" alt="Emily" class="reviewer__img">
+                            <div class="reviewer_wrap">
+                                <p class="reviewer__comment">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!</p>
+                            </div>
+                            <p class="reviewer__info">Diana, Chicago</p>
                         </div>
                     </li>
                 </ul>
+                <ul class="swiper-pagination reviews__pagination"></ul>
             </div>
         </div>
     </div>    
