@@ -132,11 +132,6 @@
 
 }
 
-.footer__socials-icon:hover,
-.footer__socials-icon:focus, .footer__link{
-	fill: &second;
-}
-
 .footer__link {
 	width: 100%;
 	height: 100%;
@@ -155,7 +150,14 @@
 		transform: scale(1.2);
 	}
 
+	&:hover .footer__socials-icon,
+	&:focus .footer__socials-icon{
+		fill:inherit;
+	}
+
 }
+
+
 
 .contact {
 	margin-bottom: 40px;
