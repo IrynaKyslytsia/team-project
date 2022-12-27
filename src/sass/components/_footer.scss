@@ -128,9 +128,13 @@
 }
 
 .footer__socials-icon {
-	
 	fill: $background;
 
+}
+
+.footer__socials-icon:hover,
+.footer__socials-icon:focus, .footer__link{
+	fill: &second;
 }
 
 .footer__link {
