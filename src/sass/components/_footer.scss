@@ -127,6 +127,11 @@
 	}
 }
 
+.footer__socials-icon {
+	
+	fill: $background;
+
+}
 
 .footer__link {
 	width: 100%;
@@ -145,12 +150,6 @@
 		fill: $second;
 		transform: scale(1.2);
 	}
-
-}
-
-.footer__socials-icon {
-	
-	fill: $background;
 
 }
 
