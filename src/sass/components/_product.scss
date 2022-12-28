@@ -280,6 +280,7 @@
     }
   }
 }
+
 // item bg color
 .item {
   &__yellow {
@@ -321,5 +322,5 @@
 }
 
 .product__card-set__btn__icon:hover {
-    scale: 1.2;
+    transform: scale(0.9);
   }

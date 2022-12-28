@@ -166,6 +166,8 @@
   }
 }
 
+// Кнопка модалкі Submit
+
 .modal__btn {
   display: flex;
   justify-content: center;
@@ -192,16 +194,40 @@
   }
 }
 
+// Кнопка закриття мобалкі
+
 .close__button {
+  display: block;
   position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
   top: 12px;
   right: 12px;
   background-color: inherit;
-  transition: fill $duration-function $timing-function;
   cursor: pointer;
+  transition: fill $duration-function $timing-function;
+  transition: box-shadowLL;
 
   &:hover,
   &:focus {
     fill: $accent;
+  }
+}
+
+.close-button__icon {
+   width: 11px;
+  height: 11px;
+}
+
+@media screen and (min-width: 768px) {
+ .ing-close-btn  close__button{
+    width: 24px;
+    height: 24px;
+  }
+
+  .close-btn-icon close-button__icon {
+    width: 13px;
+    height: 13px;
   }
 }
