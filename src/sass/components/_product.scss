@@ -52,36 +52,10 @@
       padding-right: 16px;
       padding-left: 16px;
     }
-    // outline: 1px solid red;
-    // background-image: url(../images/product/bg/Bg-mobile.jpg);
-    // background-size: cover;
-    // @media screen and (min-device-pixel-ratio: 2),
-    //   screen and (min-resolution: 192dpi),
-    //   screen and (min-resolution: 2dppx) {
-    //   background-image: url(../images/product/bg/Bg-mobile-2x.jpg);
-    // }
-    // @media screen and (min-width: 768px) {
-    //   background-image: url(../images/product/bg/Bg-tablet.jpg);
-    //   @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //     screen and (min-resolution: 2dppx) {
-    //     background-image: url(../images/product/bg/Bg-tablet-2x.jpg);
-    //   }
-    // }
-    // @media screen and (min-width: 1200px) {
-    //   background-image: url(../images/product/bg/Bg-desktop.jpg);
-    //   @media screen and (min-device-pixel-ratio: 2),
-    //     screen and (min-resolution: 192dpi),
-    //     screen and (min-resolution: 2dppx) {
-    //     background-image: url(../images/product/bg/Bg-desktop-2x.jpg);
-    //   }
-    // }
   }
   &__label {
     margin-bottom: 12px;
 
-    // font-family: 'Montserrat';
-    // font-style: normal;
     font-weight: 800;
 
     font-size: 18px;
@@ -102,8 +76,6 @@
   }
   &__title {
     font-family: 'Seymour One';
-    // font-style: normal;
-    // font-weight: 400;
     font-size: 30px;
     line-height: 1.26;
     text-align: center;
@@ -141,7 +113,6 @@
       border-radius: 24px;
       background-color: $background-accent;
       @media screen and (max-width: 767px) {
-        // display: inline-block;
         padding-top: 123px;
         padding-left: 40px;
         padding-right: 40px;
@@ -222,8 +193,6 @@
     &__title {
       margin-bottom: 40px;
 
-      // font-family: 'Montserrat';
-      // font-style: normal;
       font-weight: $secondary-text-weight;
       font-size: 20px;
       line-height: 1.2;
@@ -244,9 +213,6 @@
       }
     }
     &__text {
-      // font-family: 'Montserrat';
-      // font-style: normal;
-      // font-weight: 400;
       font-size: 14px;
       line-height: 176%;
       text-align: center;
@@ -277,6 +243,15 @@
       margin-right: auto;
       display: block;
       background-color: transparent;
+      &__icon {
+        transition-property: transform;
+        transition-timing-function: $timing-function;
+        transition-duration: $duration-function;
+        &:hover,
+        &:focus {
+          transform: scale(0.9);
+        }
+      }
     }
   }
 }
@@ -320,7 +295,3 @@
     box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
   }
 }
-
-.product__card-set__btn__icon:hover {
-    transform: scale(0.9);
-  }
