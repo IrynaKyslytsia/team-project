@@ -94,7 +94,8 @@
 	justify-content: flex-end;
 
 	@media screen and (min-width: 768px) {
-		justify-content: center;
+		justify-content: flex-end;
+		margin-bottom: 60px;
 	}
 }
 
@@ -204,7 +205,7 @@
 .trademark {
 	width: 158px;
 	margin: 0;
-	padding-top: 27px;
+	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
 
