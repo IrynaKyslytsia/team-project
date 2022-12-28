@@ -67,6 +67,41 @@
   }
 }
 
+.button__locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  width: 196px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  background: $accent;
+  border-radius: 10px;
+  border: 1px solid $accent;
+  color: #000000;
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, fill 250ms linear;
+
+  &:hover {
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+  }
+
+  &:focus {
+    background-color: $btn-accent;
+    border-color: $btn-accent;
+    color: $second;
+    fill: $second;
+  }
+
+  &--disabled {
+    border-color: $third;
+    background-color: $third;
+  }
+}
+
 .button__franchise {
   display: flex;
   justify-content: center;
