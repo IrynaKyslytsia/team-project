@@ -8,21 +8,18 @@
     }
 }
 
+// .close-button {
+//   position: absolute;
+//   top: 12px;
+//   right: 12px;
 
+//   background-color: inherit;
 
-
-.close-button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-
-  background-color: inherit;
-
-  &:hover,
-  &:focus {
-    fill: $accent;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     fill: $accent;
+//   }
+// }
 
 .modal-franchise__title {
   max-width: 322px;

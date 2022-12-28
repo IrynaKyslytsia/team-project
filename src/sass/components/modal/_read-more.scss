@@ -14,19 +14,19 @@
     width: 568px;
     height: 449px;
   }
-  &__close-btn {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    cursor: pointer;
-    fill: $main;
-    background-color: $second;
+  // &__close-btn {
+  //   position: absolute;
+  //   right: 10px;
+  //   top: 10px;
+  //   cursor: pointer;
+  //   fill: $main;
+  //   background-color: $second;
 
-    &:hover > .close-icon,
-    &:focus > .close-icon {
-      fill: $accent;
-    }
-  }
+  //   &:hover > .close-icon,
+  //   &:focus > .close-icon {
+  //     fill: $accent;
+  //   }
+  // }
   &__tittle {
     font-family: 'Seymour One';
     font-style: normal;
