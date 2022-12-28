@@ -4,15 +4,18 @@
    
    /* Скрываем подложку  */
    opacity: 0;
-   visibility: hidden; 
+   visibility: hidden;
+   
    position: fixed;
    top: 0;
    left: 0;
    width: 100%;
    height: 100%;
+   background-color: rgba(0, 0, 0, .5);
    z-index: 20;
    transition: .3s all;
 }
+
 
 /* Стили для модальных окон */
 
@@ -21,6 +24,7 @@
    /* Скрываем окна  */
    opacity: 0;
    visibility: hidden;
+   
    
    /*  Установаем ширину окна  */
    width: 100%;
@@ -37,9 +41,8 @@
    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
    text-align: center;
    padding: 30px;
-   background-color: $second;
-   border: 2px solid $accent;
-   border-radius: 10px;
+   border-radius: 3px;
+   background-color: #fff;
    transition: 0.3s all;
 }
 
@@ -47,7 +50,7 @@
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
-.overlay.active {
+.overlay.active{
    opacity: 1;
    visibility: visible;
 }
