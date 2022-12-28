@@ -8,19 +8,6 @@
     }
 }
 
-// .close-button {
-//   position: absolute;
-//   top: 12px;
-//   right: 12px;
-
-//   background-color: inherit;
-
-//   &:hover,
-//   &:focus {
-//     fill: $accent;
-//   }
-// }
-
 .modal-franchise__title {
   max-width: 322px;
   margin: 0 auto;
@@ -107,8 +94,8 @@
 }
 
 .modal-franchise__btn {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $duration-function $timing-function,
+  box-shadow $duration-function $timing-function;
   padding: 12px 34px;
   width: 132px;
   align-self: center;

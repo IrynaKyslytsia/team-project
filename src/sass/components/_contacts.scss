@@ -151,7 +151,7 @@
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
   color: #d6936d;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $duration-function $timing-function;
   
   &:hover {
     color: #0A8817;
@@ -289,7 +289,7 @@
   display: block;
   margin-top: 24px;
   margin-bottom: 6px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $duration-function $timing-function;
   
   &:hover {
     color: #0A8817;
@@ -319,7 +319,7 @@
   font-size: 12px;
   line-height: calc(19 / 12);
   color: #131313;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $duration-function $timing-function;
   
   &:hover {
     color: #0A8817;
