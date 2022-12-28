@@ -39,12 +39,17 @@
 
   &__svg {
     margin-bottom: 32px;
+    transition: all 0.4s;
     @media screen and (min-width: 768px) {
       margin-bottom: 32px;
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 40px;
     }
+  }
+  &__svg:hover,
+  &__svg:focus {
+    transform: scale(1.2);
   }
   &__value {
     @include fonts(36, 44, 700, 0.04em);
