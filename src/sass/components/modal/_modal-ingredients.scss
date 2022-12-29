@@ -97,6 +97,8 @@
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
 
+ 
+
 .ing-shift-value {
   font-family: 'Montserrat';
   font-weight: 500;
@@ -146,6 +148,7 @@
 }
 
 .ing-form-input {
+  min-width: 240px;
   margin-bottom: 16px;
   padding: 11px;
   width: 270px;
