@@ -1,9 +1,23 @@
 .contacts {
   min-width: 320px;
   background-color: #84a178;
-  padding-top: 960px;
+  padding-top: 1050px;
   padding-bottom: 60px;
   position: relative;
+}
+
+@media screen and (min-width: 320px) {
+  .contacts {
+    padding-top: 1000px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contacts {
+    padding-top: 950px;
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -60,7 +74,6 @@
 
   @media screen and (max-width: 767px) {
     width: 440px;
-    max-height: 420px;
     max-width: 90vw;
 
     &:not(:last-child) {
