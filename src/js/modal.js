@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (key == 27) {
 
             document.querySelector('.modal.active').classList.remove('active');
-            document.querySelector('.overlay2').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
         };
     }, false);
 
