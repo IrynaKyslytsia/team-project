@@ -156,6 +156,14 @@
   border: 1px solid $background-color;
   border-radius: 10px;
   outline: none;
+  
+}
+
+.ing-form-input,
+.ing-form-comment {
+@media screen and (max-width: 340px) {
+    width: 100%;
+  }
 }
 
 .ing-form-input::placeholder {
